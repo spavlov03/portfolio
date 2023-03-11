@@ -3,10 +3,10 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Main', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'About', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Contact', href: '#', current: false },
 ]
 
 function classNames(...classes) {
@@ -98,30 +98,14 @@ export default function NavBar() {
                         {({ active }) => (
                           <a
                             href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Your Profile
-                          </a>
+                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700 custom')}
+                          ><img className="h-8 w-8  " src="https://res.cloudinary.com/dwy8aok2u/image/upload/v1672876982/tvoxxudbgowv6qesjvft.png"/>LinkedIn</a>
                         )}
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Settings
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Sign out
-                          </a>
+                            <a href="#" className={classNames(active ? 'bg-gray-100' : "", 'block px-4 py-2 text-sm text-gray-700')}> 
+                            <img className="h-8 w-8" src="https://res.cloudinary.com/dwy8aok2u/image/upload/v1672876982/tvoxxudbgowv6qesjvft.png"/>GitHub</a>
                         )}
                       </Menu.Item>
                     </Menu.Items>

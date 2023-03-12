@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 body {
+  color: white;
+  background-color: #242E4A;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -17,17 +19,29 @@ code {
 }
 
 .navbar { 
-  background-color: rgb(201, 151, 247);
-  align-items: center;
+  /* align-items: center; */
+  margin-top: 5px;
 }
 .nav-item { 
-  width: 25%;
+  /* background-color: #131827; */
+  /* width: 20%; */
   height: 50px;
   line-height: 50px;
+  /* width: 150px; */
+  /* border-radius: 20px; */
+  color: white;
 }
 .nav-item:hover { 
-  transition: 1s;
-  background-color: blueviolet;
+  transition: 0.5s;
+  /* background-color: rgb(182, 117, 243); */
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
+}
+.pic { 
+  border: 5px solid #60C2B3;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  margin-left: -30%;
 }

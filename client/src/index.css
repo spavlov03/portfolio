@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   color: white;
   background-color: #242E4A;
@@ -49,4 +50,18 @@ code {
   /* position: relative; */
   padding-top: 200px; 
   margin-top: -200px;
+}
+#contactBtn { 
+  background-color: #60C2B3;
+  /* border-radius: 10px; */
+  height: 30px;
+  width: 100px;
+  align-self: center;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+#contactBtn:hover { 
+  transition: 0.5s;
+  background-color: #478f84;
 }

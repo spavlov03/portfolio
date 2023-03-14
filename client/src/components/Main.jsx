@@ -2,6 +2,8 @@ import React from 'react'
 import pic from '../assets/pic.jpeg'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const Main = () => {
   // const [name,setName] = useState(); 
@@ -12,21 +14,33 @@ const Main = () => {
     
   // }
 
-  const ContactForm = () => {
-    const {
-      register,
-      handleSubmit,
-      reset,
-      formState: { errors }
-    } = useForm();
+  
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
     
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,  
+      draggable: false,
+      className: 'submit-feedback success',
+      toastId: 'notifyToast'
+    });
+  };
+
     const onSubmit = async (data) => {
-      const { name, email, subject, message } = data;
+      const { name, email,  message } = data;
       try {
         const templateParams = {
           name,
           email,
-          subject,
           message
         };
         await emailjs.send(
@@ -40,7 +54,7 @@ const Main = () => {
         console.log(e);
       }
     };
-
+  
 
   return (
     <div className='flex flex-col items-center' id='pic'>

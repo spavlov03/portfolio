@@ -65,3 +65,39 @@ code {
   transition: 0.5s;
   background-color: #478f84;
 }
+
+.parallax {
+  /* The image used */
+  background-image: url('../public/recipify.png');
+
+  /* Full height */
+  min-height: 300px;
+  /* max-height: 400px; */
+  width: 100%;
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1000px,auto,contain;
+}
+.other { 
+  height:200px;
+  background-color:red;
+  font-size:36px
+}
+.parallax2 {
+  /* The image used */
+  background-image: url('../public/dojo_conn.png');
+
+  /* Full height */
+  min-height: 300px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1000px,auto,contain;
+}

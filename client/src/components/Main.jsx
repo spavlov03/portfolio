@@ -4,6 +4,9 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import emailjs from 'emailjs-com'
+
+
 
 const Main = () => {
   // const [name,setName] = useState(); 
@@ -50,6 +53,7 @@ const Main = () => {
           process.env.REACT_APP_USER_ID
         );
         reset();
+        toastifySuccess();
       } catch (e) {
         console.log(e);
       }
@@ -63,7 +67,31 @@ const Main = () => {
       <p className='text-green text-5xl anchor' id='about'>I'm Svet.</p>
       <p className='w-1/2 '>About : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p>
       <p className='text-green text-xl anchor' id='projects'>My Projects</p>
-      <p className='w-1/2 '>Projects: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p>
+      <div className='w-1/2 '>
+        <p className='text-green text-l'>Recipify</p> 
+        <p>Full Stack Developer | Live Site | GitHub</p>
+        <p>An app with full CRUD functionality for browsing and creating recipes. 
+          <ul>
+            <li>Established full stack single page web application with ReactJS front end with functional components. Developed Node and Express backend connected to MongoDB database utilizing flexible structure.</li>
+            <li>Implemented Bootstrap and Material UI frameworks for responsive design and functionality.</li>
+            <li>Developed different user types using conditional rendering for full control over user posts to ensure all posts follow app guidelines and conditions.</li>
+            <li>Encrypted users’ passwords with Bcrypt and hashing for user security.</li>
+            <li>Deployed to the web using AWS EC2 services.</li>
+          </ul>
+        </p>
+        <div className="parallax"></div>
+        <p className='text-green text-l'>Dojo Connect</p> 
+        <p>Lead Developer/Backend Developer | Live Site | GitHub</p>
+        <p>Platform for developers to post and comment on coding issues. 
+          <ul>
+            <li>Developed back-end server with Flask. Created controllers and models for querying database and navigating through web application.</li>
+            <li>Organized team meetings, delegated responsibilities to team, and kept team on track using discord, google docs and GitHub to stay up to date with current working version.</li>
+            <li>Encrypted users’ passwords with Bcrypt and hashing for user security.</li>
+            <li>Deployed to the web using AWS EC2 services.</li>
+          </ul>
+        </p>
+        <div className="parallax2"></div>
+      </div>
       <p className='text-green text-xl anchor' id='contact'>Contact Me</p>
       {/* <p className='w-1/2 '>Contanct: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p> */}
       <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)} noValidate>

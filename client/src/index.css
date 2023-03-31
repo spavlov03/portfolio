@@ -104,4 +104,5 @@ code {
 .custom { 
   display: flex;
   flex-direction: column;
+  background-color: purple;
 }

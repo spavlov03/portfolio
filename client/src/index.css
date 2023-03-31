@@ -101,3 +101,7 @@ code {
   background-repeat: no-repeat;
   background-size: 1000px,auto,contain;
 }
+.custom { 
+  display: flex;
+  flex-direction: column;
+}

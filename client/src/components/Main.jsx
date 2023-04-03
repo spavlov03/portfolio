@@ -47,10 +47,10 @@ const Main = () => {
           message
         };
         await emailjs.send(
-          process.env.REACT_APP_SERVICE_ID,
-          process.env.REACT_APP_TEMPLATE_ID,
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
           templateParams,
-          process.env.REACT_APP_USER_ID
+          process.env.REACT_APP_EMAILJS_USER_ID
         );
         reset();
         toastifySuccess();
@@ -67,6 +67,7 @@ const Main = () => {
         <div className='pt-10 pl-10'>
           <p className='text-green text-xl '>Hey there,</p>
           <p className='text-green text-5xl anchor' id='about'>I'm Svet!</p>
+          <button className='btn btn-blue' onClick={toastifySuccess()}>Toast</button>
         </div>
       </div>
       <p className='lg:w-2/3 w-5/6 mb-10'>About : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p>
@@ -129,6 +130,7 @@ const Main = () => {
         {errors.message && <span className='errorMessage'>Please enter a message</span>}
         <input type="submit" value="SEND" id='contactBtn' className='rounded'/>
       </form>
+
     </div>
   )
 }

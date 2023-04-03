@@ -1,6 +1,6 @@
 import React from 'react'
 import pic from '../assets/pic.jpeg'
-import { useState } from 'react'
+// import { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -38,9 +38,6 @@ const Main = () => {
     });
   };
 
-  const testToast = () => { 
-    toast("This is a test" , {position:"top-center"})
-  }
 
     const onSubmit = async (data) => {
       const { name, email,  message } = data;
@@ -65,10 +62,10 @@ const Main = () => {
   
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center anchor' id='home'>
       <div className='flex gap-30 mb-10'>
-        <img className='pic ' src={pic} alt="" />
-        <div className='pt-10 pl-10'>
+        <img className='pic' src={pic} alt="Svet" />
+        <div className='pt-20 pl-10 top'>
           <p className='text-green text-xl '>Hey there,</p>
           <p className='text-green text-5xl anchor' id='about'>I'm Svet!</p>
         </div>
@@ -102,6 +99,7 @@ const Main = () => {
         </p>
       </div>
       <div className="parallax2 mb-10"></div>
+      <p className='text-green text-xl w-1/2'>If you would like to get in touch with me , please fill out the form below and I will get back to you as soon as I can!</p>
       <p className='text-green text-xl anchor' id='contact'>Contact Me</p>
       {/* <p className='w-1/2 '>Contanct: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p> */}
       <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)} noValidate>

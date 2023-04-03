@@ -38,6 +38,8 @@ code {
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
 }
+
+
 .pic { 
   border: 5px solid #60C2B3;
   border-radius: 50%;
@@ -101,8 +103,20 @@ code {
   background-repeat: no-repeat;
   background-size: 1000px,auto,contain;
 }
-.custom { 
-  display: flex;
-  flex-direction: column;
-  background-color: purple;
+
+@media all and (max-width:991px) {
+  .pic { 
+    border: 5px solid #60C2B3;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    margin-left: 0%;
+  }
+  .top { 
+    padding: 0;
+    padding-top: 80px;
+    padding-left: 0px;
+    
+  }
 }

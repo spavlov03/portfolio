@@ -70,7 +70,24 @@ const Main = () => {
           <p className='text-green text-5xl anchor' id='about'>I'm Svet!</p>
         </div>
       </div>
-      <p className='lg:w-2/3 w-5/6 mb-10'>About : Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p>
+      <p className='lg:w-2/3 w-5/6 mb-10'>I am a self-starter, forward thinking full stack developer. Have gone thru different industries to gain leadership and critical thinking experience. I have strong passion for technologies and the way of the future. </p>
+      <ul className='lg:w-2/3 w-5/6 mb-10'>
+        <li>Coding Dojo graduate with experience with the following technologies: </li>
+        <li>Languages: HTML, CSS, JavaScript , Swift , Python, SQL</li>
+        <li>Front End: React , jQuery , Ajax , JSON, RESTful APIs, Bootstrap</li>
+        <li>Back End: Flask, Django, Express, OOP, AWS</li>
+        <li>Database: MySQL,Mongo DB, Django ORM</li>
+        <li>Software: Photoshop, Final Cut Pro , Office Suite and many more. </li>
+      </ul>
+      <ul className='lg:w-2/3 w-5/6 mb-10'>
+        <li>In a developer role I will : </li>
+        <li>- Build responsive frontend and backend designs to spec per the UX design.</li>
+        <li>- Problem solve , and work with team to meet expected outcome at deadline </li>
+        <li>- Collaborate with other software developers </li>
+        <li>- Prioritize multiple projects to ensure quality and timely results</li>
+        <li>- Be coachable and accepting of constructive criticism</li>
+        <li>- Learn new technologies as needed</li>
+      </ul>
       <p className='text-green text-xl anchor' id='projects'>My Projects</p>
       <div className='lg:w-2/3 w-5/6'>
         <p className='text-green text-l'>Recipify</p> 
@@ -99,7 +116,7 @@ const Main = () => {
         </p>
       </div>
       <div className="parallax2 mb-10"></div>
-      <p className='text-green text-xl w-1/2'>If you would like to get in touch with me , please fill out the form below and I will get back to you as soon as I can!</p>
+      <p className='text-green text-2xl w-1/2'>If you would like to get in touch with me , please fill out the form below and I will get back to you as soon as I can!</p>
       <p className='text-green text-xl anchor' id='contact'>Contact Me</p>
       {/* <p className='w-1/2 '>Contanct: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt saepe amet, est nulla temporibus eveniet accusamus perferendis expedita ut, et ullam debitis. Fugiat animi eius expedita officiis voluptate temporibus velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro cum velit omnis esse eaque odio cumque quisquam reprehenderit! Facilis, quas nam. Ducimus aliquam labore nulla molestiae delectus neque reprehenderit quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia expedita fugit quibusdam minus, maiores itaque, tempora perspiciatis fugiat delectus voluptatum, deserunt placeat hic eligendi nemo cupiditate nihil non consequatur?</p> */}
       <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)} noValidate>

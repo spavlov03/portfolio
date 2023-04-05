@@ -67,41 +67,43 @@ code {
   transition: 0.5s;
   background-color: #478f84;
 }
-
-.parallax {
-  /* The image used */
-  background-image: url('../public/recipify.png');
-
-  /* Full height */
-  min-height: 300px;
-  /* max-height: 400px; */
-  width: 100%;
-  
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1000px,auto,contain;
-}
 .other { 
   height:200px;
   background-color:red;
   font-size:36px
 }
-.parallax2 {
-  /* The image used */
-  background-image: url('../public/dojo_conn.png');
 
-  /* Full height */
-  min-height: 300px;
-  width: 100%;
+@media all and (min-width:992px) {
+  .parallax {
+    /* The image used */
+    background-image: url('../public/recipify.png');
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1000px,auto,contain;
+    /* Full height */
+    min-height: 300px;
+    /* max-height: 400px; */
+    width: 100%;
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1000px,auto,contain;
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url('../public/dojo_conn.png');
+
+    /* Full height */
+    min-height: 300px;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1000px,auto,contain;
+  }
 }
 
 @media all and (max-width:991px) {
@@ -140,6 +142,6 @@ code {
     /* Full height */
     min-height: 250px;
     width: 100%;
-    background-size: 500px,auto,contain;
+    background-size: 500px,200px;
   }
 }

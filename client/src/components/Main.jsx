@@ -153,6 +153,7 @@ const Main = () => {
         </form>
         <ToastContainer/>
       </div>
+      <p>Product of Svet Pavlov</p>
     </div>
   )
 }

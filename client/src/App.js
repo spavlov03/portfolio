@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/NavBar';
 import Navigation from './components/Navigation';
 import Main from './components/Main';
 import Test from './components/Test';
@@ -11,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      {/* <NavBar/> */}
       <Navigation/>
       <Routes>
         <Route path='/' element={<Main/>}/>

@@ -27,7 +27,7 @@ const Main = () => {
   } = useForm();
     
   const toastifySuccess = () => {
-    toast('Form sent!', {
+    toast('Message sent!', {
       position: 'bottom-right',
       autoClose: 5000,
       hideProgressBar: true,

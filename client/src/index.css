@@ -130,18 +130,20 @@ code {
     background-image: url('../public/recipify.png');
   
     /* Full height */
-    min-height: 250px;
+    min-height: 220px;
     /* max-height: 400px; */
     width: 100%;
-    background-size: 500px,auto,contain;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .parallax2 {
     /* The image used */
     background-image: url('../public/dojo_conn.png');
   
     /* Full height */
-    min-height: 250px;
+    min-height: 220px;
     width: 100%;
-    background-size: 500px,200px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }

@@ -104,7 +104,7 @@ code {
     background-repeat: no-repeat;
     background-size: 1000px,auto,contain;
   }
-}
+} 
 
 @media all and (max-width:991px) {
   .pic { 
@@ -146,4 +146,4 @@ code {
     background-size: contain;
     background-repeat: no-repeat;
   }
-}
+} 

@@ -1,6 +1,5 @@
 import React from 'react'
 import pic from '../assets/pic.jpeg'
-// import { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -9,16 +8,8 @@ import Navigation from './Navigation';
 
 
 
-const Main = () => {
-  // const [name,setName] = useState(); 
-  // const [email,setEmail] = useState(); 
-  // const [message,setMessage] = useState(); 
-  // const handleSubmit = (e) => { 
-  //   e.preventDefault();
-    
-  // }
 
-  
+const Main = () => {
   const {
     register,
     handleSubmit,
@@ -63,6 +54,7 @@ const Main = () => {
   
 
   return (
+    
     <div>
       <Navigation/>
       <div className='flex flex-col items-center anchor' id='home'>

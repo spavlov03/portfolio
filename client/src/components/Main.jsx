@@ -86,7 +86,7 @@ const Main = () => {
         <p className='text-green text-xl anchor' id='projects'>My Projects</p>
         <div className='lg:w-2/3 w-5/6'>
           <p className='text-green text-l'>Recipify</p> 
-          <p>Full Stack Developer | Live Site | GitHub</p>
+          <p>Full Stack Developer | <a className='underline hover:underline-offset-4' href='http://35.86.112.40' target="_blank" rel="noreferrer">Live Site</a> | <a className="underline hover:underline-offset-4" href="https://github.com/spavlov03/recipesMern" target="_blank" rel="noreferrer">GitHub</a> </p>
           <p>An app with full CRUD functionality for browsing and creating recipes. 
             <ul>
               <li>Established full stack single page web application with ReactJS front end with functional components. Developed Node and Express backend connected to MongoDB database utilizing flexible structure.</li>
@@ -100,7 +100,7 @@ const Main = () => {
         <div className="parallax"></div>
         <div className='lg:w-2/3 w-5/6'>
           <p className='text-green text-l'>Dojo Connect</p> 
-          <p>Lead Developer/Backend Developer | Live Site | GitHub</p>
+          <p>Lead Developer/Backend Developer | <a className='underline hover:underline-offset-4' href='http://54.245.35.250' target="_blank" rel="noreferrer">Live Site</a> | <a className="underline hover:underline-offset-4" href="https://github.com/spavlov03/dojoConn" target="_blank" rel="noreferrer">GitHub</a> </p>
           <p>Platform for developers to post and comment on coding issues. 
             <ul>
               <li>Developed back-end server with Flask. Created controllers and models for querying database and navigating through web application.</li>
